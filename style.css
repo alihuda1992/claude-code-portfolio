@@ -1,0 +1,47 @@
+/* PLACEHOLDER — replace wholesale when design arrives */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.5;
+}
+
+#header, #main, #footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+#header h1 { font-size: 2rem; }
+#header p  { color: #555; }
+
+#projects {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.project-card h2 { font-size: 1.1rem; }
+.project-card p  { color: #444; margin: 0.25rem 0 0.75rem; }
+
+.project-links a {
+  margin-right: 0.75rem;
+  font-size: 0.85rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.tag  { font-size: 0.75rem; background: #f0f0f0; padding: 0.15rem 0.5rem; border-radius: 4px; }
+
+#footer { color: #888; font-size: 0.85rem; border-top: 1px solid #eee; }
+#footer a { color: inherit; }
