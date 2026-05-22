@@ -8,9 +8,9 @@
   },
   {
     "name": "The Table App",
-    "description": "A structured data and table management application designed to make working with tabular information intuitive, flexible, and fast — no spreadsheet required.",
+    "description": "A personal restaurant diary for food lovers — log the restaurants you've visited, save the dishes you love, and discover your next great meal.",
     "url": "",
     "repo": "https://github.com/alihuda1992/TheTableApp",
-    "tags": ["Web App", "Data"]
+    "tags": ["Web App", "Food & Dining"]
   }
 ]
