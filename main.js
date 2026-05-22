@@ -18,6 +18,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // ── Projects: render from projects.json ─────────────────
 function renderProjects(projects) {
+  const safeUrl = u => /^https?:\/\//.test(u) ? u : '';
   const grid = document.querySelector('#projects .projects-grid');
   grid.innerHTML = projects.map((p, i) => `
     <div class="proj-card reveal${i > 0 ? ' stagger-' + Math.min(i, 3) : ''}">
@@ -36,8 +37,8 @@ function renderProjects(projects) {
             ${p.tags.map(t => `<span class="proj-tag">${t}</span>`).join('')}
           </div>
           <div style="display:flex;gap:10px;align-items:center;">
-            ${p.url  ? `<a href="${p.url}"  target="_blank" rel="noopener" class="proj-link">Live <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>` : ''}
-            ${p.repo ? `<a href="${p.repo}" target="_blank" rel="noopener" class="proj-link">GitHub <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>` : ''}
+            ${safeUrl(p.url)  ? `<a href="${safeUrl(p.url)}"  target="_blank" rel="noopener" class="proj-link">Live <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>` : ''}
+            ${safeUrl(p.repo) ? `<a href="${safeUrl(p.repo)}" target="_blank" rel="noopener" class="proj-link">GitHub <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>` : ''}
           </div>
         </div>
       </div>
