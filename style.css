@@ -523,6 +523,22 @@ h2.sec-title.on-dark { color: var(--white); }
   color: var(--text-mid);
   margin-bottom: 6px;
 }
+.edu-icon--logo {
+  background: transparent;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+}
+.edu-icon--logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
 .edu-field {
   display: inline-block;
   font-size: 0.72rem;
