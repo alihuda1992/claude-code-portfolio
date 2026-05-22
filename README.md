@@ -10,10 +10,6 @@ Personal portfolio showcasing projects built with [Claude Code](https://claude.a
 
 Vanilla HTML/CSS/JS — no framework, no build step. Deploys automatically to GitHub Pages on every push to `main`.
 
-## Design
-
-Prismatic brand system (adapted from Cprime). Tokens, typography, and layout spec live in [DESIGN_SPEC.md](./handoff/DESIGN_SPEC.md) from the Claude Design handoff.
-
 ## Adding a project
 
 Edit `projects.json` only — cards render dynamically:
