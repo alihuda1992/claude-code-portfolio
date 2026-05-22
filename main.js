@@ -25,7 +25,7 @@ function renderProjects(projects) {
       <div class="proj-stripe"></div>
       <div class="proj-body">
         <div class="proj-icon">
-          <svg width="18" height="18" fill="none" stroke="#06A28C" stroke-width="1.5" viewBox="0 0 24 24">
+          <svg width="18" height="18" fill="none" stroke="rgba(130,163,255,0.8)" stroke-width="1.5" viewBox="0 0 24 24">
             <rect x="3" y="3" width="18" height="18" rx="2"/>
             <path d="M3 9h18M3 15h18M9 3v18"/>
           </svg>
