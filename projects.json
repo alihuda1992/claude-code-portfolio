@@ -1,9 +1,16 @@
 [
   {
-    "name": "Example Project",
-    "description": "Short description of the project",
-    "url": "https://example.com",
-    "repo": "https://github.com/ali-huda/example",
-    "tags": ["web", "ai"]
+    "name": "JobApp",
+    "description": "A job application tracking tool to organize and manage your job search pipeline — keeping applications, statuses, contacts, and follow-ups in one structured view.",
+    "url": "",
+    "repo": "https://github.com/alihuda1992/JobApp",
+    "tags": ["Web App", "Productivity"]
+  },
+  {
+    "name": "The Table App",
+    "description": "A structured data and table management application designed to make working with tabular information intuitive, flexible, and fast — no spreadsheet required.",
+    "url": "",
+    "repo": "https://github.com/alihuda1992/TheTableApp",
+    "tags": ["Web App", "Data"]
   }
 ]
